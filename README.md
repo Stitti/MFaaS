@@ -1,7 +1,7 @@
 # MFaaS
 Modern Family as a Service
 
-##API
+## API
 ### `GET /api/quotes`
 Returns all quotes.
 ```json
@@ -78,3 +78,6 @@ Returns a list of all quotes that contain the value of `{query}` e.g. `GET /v1/q
   }
 ]
 ```
+
+## Contributing
+If you want to contribute, add a quote and the actor in `quote.json`
