@@ -1,6 +1,8 @@
 # MFaaS
 Modern Family as a Service
 
+![](moder-family-header.gif)
+
 ## API
 ### `GET /api/quotes`
 Returns all quotes.
