@@ -5,11 +5,13 @@ This is an api with which you can get quotes from modern family. You can filter 
 
 ![](modern-family-header.gif)
 
-## Production host
-[https://mfaas.azurewebsites.net](https://mfaas.azurewebsites.net)
+## Websites
+Overview: [https://stitti.github.io/MFaaS/](https://stitti.github.io/MFaaS/)
+Api: [https://mfaas.azurewebsites.net](https://mfaas.azurewebsites.net)
 
 ## API
-### `GET /api/quotes`
+### Quotes
+#### `GET /api/quotes`
 Returns all quotes.
 > [https://mfaas.azurewebsites.net/api/quotes](https://mfaas.azurewebsites.net/api/quotes)
 ```json
@@ -25,7 +27,7 @@ Returns all quotes.
 ]
 ```
 
-### `GET /api/quotes/random`
+#### `GET /api/quotes/random`
 Returns a random quote.
 > [https://mfaas.azurewebsites.net/api/quotes/random](https://mfaas.azurewebsites.net/api/quotes/random)
 ```json
@@ -35,7 +37,7 @@ Returns a random quote.
 }
 ```
 
-### `GET /api/quotes/random/{count}`
+#### `GET /api/quotes/random/{count}`
 Returns an array with `{count}` quotes e.g. `GET /api/quotes/random/3`.
 > [https://mfaas.azurewebsites.net/api/quotes/random/3](https://mfaas.azurewebsites.net/api/quotes/random/3)
 ```json
@@ -55,9 +57,33 @@ Returns an array with `{count}` quotes e.g. `GET /api/quotes/random/3`.
 ]
 ```
 
-### `GET /api/quotes/actor/{actor}`
-Returns a list of all quotes of actors whose name contains the value of `{actor}` e.g. `GET /api/quotes/actor/dunphy`.
-> [https://mfaas.azurewebsites.net/api/quotes/actor/dunphy](https://mfaas.azurewebsites.net/api/quotes/actor/dunphy)
+#### `GET /api/quotes/actor/{actor}`
+Returns a list of all quotes of actors whose name matches the value of `{actor}` e.g. `GET /api/quotes/actor/mitchell%20pritchett`.
+> [https://mfaas.azurewebsites.net/api/quotes/actor/mitchell%20pritchett](https://mfaas.azurewebsites.net/api/quotes/actor/mitchell%20pritchett)
+```json
+[
+  {
+    "quote": "I came out of the closet in my mid-twenties. I had to actually come out to my dad three times before he finally acknowledged it. I'm not sure if maybe he was hoping he heard it wrong like I had said, Dad, I'm gray",
+    "actor": "Mitchell Pritchett"
+  },
+  {
+    "quote": "Everyone's staring at us. I haven't been judged by this many people since I forgot my canvas bags at Whole Foods.",
+    "actor": "Mitchell Pritchett"
+  },
+  {
+    "quote": "Usually when everything's normal, people don't respond in perfectly rehearsed unison.",
+    "actor": "Mitchell Pritchett"
+  },
+  {
+    "quote": "I don't wanna meet anything on Monday that I'm gonna eat on Friday.",
+    "actor": "Mitchell Pritchett"
+  }
+]
+```
+
+#### `GET /api/quotes/actor/query/{query}`
+Returns a list of all quotes of actors whose name contains the value of `{query}` e.g. `GET /api/quotes/actor/query/dunphy`.
+> [https://mfaas.azurewebsites.net/api/quotes/actor/query/dunphy](https://mfaas.azurewebsites.net/api/quotes/actor/query/dunphy)
 ```json
 [
   {
@@ -79,7 +105,7 @@ Returns a list of all quotes of actors whose name contains the value of `{actor}
   ]
 ```
 
-### `GET /api/quotes/actor/{actor}`
+#### `GET /api/quotes/query/{query}`
 Returns a list of all quotes that contain the value of `{query}` e.g. `GET /v1/quotes/query/tongue`.
 > [https://mfaas.azurewebsites.net/api/quotes/query/tongue](https://mfaas.azurewebsites.net/api/quotes/query/tongue)
 ```json
@@ -87,6 +113,82 @@ Returns a list of all quotes that contain the value of `{query}` e.g. `GET /v1/q
   {
     "quote": "What could be more natural than your mother's tongue in your ear?",
     "actor": "Gloria Delgado-Pritchett"
+  }
+]
+```
+
+### Actors
+#### `GET /api/actors`
+Returns all actors
+> [https://mfaas.azurewebsites.net/api/actors](https://mfaas.azurewebsites.net/api/actors)
+```json
+[
+  {
+    "name": "Phil Dunphy",
+    "gender": "male"
+  },
+  {
+    "name": "Claire Dunphy",
+    "gender": "female"
+  },
+  {
+    "name": "Luke Dunphy",
+    "gender": "male"
+  }
+]
+```
+#### `GET /api/actors/name/{name}`
+Returns the actor whose name matches the value of `{name}` e.g. `GET /api/actors/name/phil%20dunphy`.
+> [https://mfaas.azurewebsites.net/api/actors/name/phil%20dunphy](https://mfaas.azurewebsites.net/api/actors/name/phil%20dunphy)
+```json
+{
+  "name": "Phil Dunphy",
+  "gender": "male"
+}
+```
+
+#### `GET /api/actors/gender/{gender}`
+Returns the actors whose gender matches the value of `{gender}` e.g. `GET /api/actors/gender/male`.
+```json
+[
+  {
+    "name": "Phil Dunphy",
+    "gender": "male"
+  },
+  {
+    "name": "Luke Dunphy",
+    "gender": "male"
+  },
+  {
+    "name": "Jay Pritchett",
+    "gender": "male"
+  }
+]
+```
+
+#### `GET /api/actors/query/{query}`
+Returns the actors whose name contains the value of `{query}` e.g. `GET /api/actors/query/dunphy`.
+```json
+[
+  {
+    "name": "Phil Dunphy",
+    "gender": "male"
+  },
+  {
+    "name": "Claire Dunphy",
+    "gender": "female"
+  },
+  {
+    "name": "Luke Dunphy",
+    "gender": "male"
+  },
+  {
+    "name": "Haley Dunphy",
+    "gender": "female"
+  },
+  {
+    "name": "Alex Dunphy",
+    "gender": "female"
   }
 ]
 ```
