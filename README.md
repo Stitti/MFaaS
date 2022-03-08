@@ -4,7 +4,7 @@ Modern Family as a Service
 ##API
 ### `GET /api/quotes`
 Returns all quotes.
-`[
+```json[
   {
     "quote": "if it were easy, everyone would be hot.",
     "actor": "Haley Dunphy"
@@ -13,7 +13,7 @@ Returns all quotes.
     "quote": "The minute they got rid of rotary phones, everything went to hell.",
     "actor": "Jay Pritchett"
   }
-]`
+]```
 
 ### `GET /api/quotes/random`
 Returns a random quote.
