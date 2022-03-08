@@ -1,3 +1,58 @@
-{
-
-}
+[
+  {
+    "name": "Phil Dunphy",
+    "gender": "male"
+  },
+  {
+    "name": "Claire Dunphy",
+    "gender": "female"
+  },
+  {
+    "name": "Luke Dunphy",
+    "gender": "male"
+  },
+  {
+    "name": "Haley Dunphy",
+    "gender": "female"
+  },
+  {
+    "name": "Alex Dunphy",
+    "gender": "female"
+  },
+  {
+    "name": "Jay Pritchett",
+    "gender": "male"
+  },
+  {
+    "name": "Fulgencio Joseph Pritchett",
+    "gender": "male"
+  },
+  {
+    "name": "Gloria Delgado-Pritchett",
+    "gender": "female"
+  },
+  {
+    "name": "Manny Delgado",
+    "gender": "male"
+  },
+  {
+    "name": "Mitchell Pritchett",
+    "gender": "male"
+  },
+  {
+    "name": "Cameron Tucker",
+    "gender": "male"
+  },
+  {
+    "name": "Lily Tucker-Pritchett",
+    "gender": "female"
+  },
+  {
+    "name": "Dylan Marshall",
+    "gender": "male"
+  },
+  {
+    "name": "Gil Thorpe",
+    "gender": "male"
+  }
+]
