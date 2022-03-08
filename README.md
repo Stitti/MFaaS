@@ -107,7 +107,7 @@ Returns a list of all quotes of actors whose name contains the value of `{query}
 ```
 
 #### `GET /api/quotes/query/{query}`
-Returns a list of all quotes that contain the value of `{query}` e.g. `GET /v1/quotes/query/tongue`.
+Returns a list of all quotes that contain the value of `{query}` e.g. `GET /api/quotes/query/tongue`.
 > [https://mfaas.azurewebsites.net/api/quotes/query/tongue](https://mfaas.azurewebsites.net/api/quotes/query/tongue)
 ```json
 [
