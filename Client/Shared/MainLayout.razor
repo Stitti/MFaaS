@@ -1,0 +1,36 @@
+﻿@inherits LayoutComponentBase
+@using MFaaS.Shared.Models;
+
+<div class="page">
+    <main>
+        <div class="top-row px-4">
+        </div>
+
+        <article class="content px-4">
+            <div>
+                <div style="text-align: center">
+                    <img src="https://github.com/Stitti/MFaaS/blob/master/modern-family-header.gif?raw=true" alt="Image"/>
+                </div>
+                <div>
+                  <blockquote style="text-align:center">
+                    <p style="font-size:20px">@_Quotation?.Quote</p>
+                    <cite style="font-size:14px">@_Quotation?.Actor</cite>
+                  </blockquote>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>
+
+@code {
+    private HttpClient _HttpClient = new HttpClient();
+    private Quotation _Quotation;
+    private string _ImagePath;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _HttpClient.BaseAddress = new Uri("https://localhost:7098");
+        _Quotation = await _HttpClient.GetFromJsonAsync<Quotation>("/api/quotes/random");
+    }
+}
+
