@@ -8,7 +8,7 @@ This is an api with which you can get quotes from modern family. You can filter 
 ## Websites
 Overview: [https://stitti.github.io/MFaaS/](https://stitti.github.io/MFaaS/)
 
-Api: [https://mfaas.azurewebsites.net](https://mfaas.azurewebsites.net)
+Api: [https://mfaas.herokuapp.com](https://mfaas.herokuapp.com)
 
 ## API
 ### Quotes
