@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,11 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Ressources\modern-family-as-a-service.jpg" />
+    <None Remove="Resources\github.png" />
+    <None Remove="Resources\modern-family-as-a-service.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Ressources\modern-family-as-a-service.jpg">
+    <Content Include="Resources\github.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\modern-family-as-a-service.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
