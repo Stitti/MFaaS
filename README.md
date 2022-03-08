@@ -5,9 +5,13 @@ This is an api with which you can get quotes from modern family. You can filter 
 
 ![](modern-family-header.gif)
 
+## Production host
+[https://mfaas.azurewebsites.net](https://mfaas.azurewebsites.net)
+
 ## API
 ### `GET /api/quotes`
 Returns all quotes.
+> [https://mfaas.azurewebsites.net/api/quotes](https://mfaas.azurewebsites.net/api/quotes)
 ```json
 [
   {
@@ -23,6 +27,7 @@ Returns all quotes.
 
 ### `GET /api/quotes/random`
 Returns a random quote.
+> [https://mfaas.azurewebsites.net/api/quotes/random](https://mfaas.azurewebsites.net/api/quotes/random)
 ```json
 {
   "quote": "With great hotness comes great responsibility",
@@ -31,7 +36,8 @@ Returns a random quote.
 ```
 
 ### `GET /api/quotes/random/{count}`
-Returns an array with `{count}` quotes e.g. `GET /v1/quotes/random/3`.
+Returns an array with `{count}` quotes e.g. `GET /api/quotes/random/3`.
+> [https://mfaas.azurewebsites.net/api/quotes/random/3](https://mfaas.azurewebsites.net/api/quotes/random/3)
 ```json
 [
   {
@@ -50,7 +56,8 @@ Returns an array with `{count}` quotes e.g. `GET /v1/quotes/random/3`.
 ```
 
 ### `GET /api/quotes/actor/{actor}`
-Returns a list of all quotes of actors whose name contains the value of `{actor}` e.g. `GET /v1/quotes/actor/dunphy`.
+Returns a list of all quotes of actors whose name contains the value of `{actor}` e.g. `GET /api/quotes/actor/dunphy`.
+> [https://mfaas.azurewebsites.net/api/quotes/actor/dunphy](https://mfaas.azurewebsites.net/api/quotes/actor/dunphy)
 ```json
 [
   {
@@ -74,6 +81,7 @@ Returns a list of all quotes of actors whose name contains the value of `{actor}
 
 ### `GET /api/quotes/actor/{actor}`
 Returns a list of all quotes that contain the value of `{query}` e.g. `GET /v1/quotes/query/tongue`.
+> [https://mfaas.azurewebsites.net/api/quotes/query/tongue](https://mfaas.azurewebsites.net/api/quotes/query/tongue)
 ```json
 [
   {
