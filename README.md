@@ -195,4 +195,4 @@ Returns the actors whose name contains the value of `{query}` e.g. `GET /api/act
 ```
 
 ## Contributing
-If you want to contribute, add a quote and the actor in `quote.json`.
+If you want to contribute, add a quote in `quotes.json` or add a new actor in `actors.json`
