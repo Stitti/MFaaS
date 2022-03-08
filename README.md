@@ -1,7 +1,7 @@
 # MFaaS
-**Modern Family as a Service**
+**Modern Family as a Service.**
 
-This is an api with which you can get quotes from modern family. You can filter by the actor or the content of the quote. Or you can just get random quotes
+This is an api with which you can get quotes from modern family. You can filter by the actor or the content of the quote. Or you can just get random quotes.
 
 ![](modern-family-header.gif)
 
@@ -84,4 +84,4 @@ Returns a list of all quotes that contain the value of `{query}` e.g. `GET /v1/q
 ```
 
 ## Contributing
-If you want to contribute, add a quote and the actor in `quote.json`
+If you want to contribute, add a quote and the actor in `quote.json`.
