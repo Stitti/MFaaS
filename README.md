@@ -88,11 +88,11 @@ Returns a list of all quotes of actors whose name contains the value of `{query}
 ```json
 [
   {
-      "quote": "uccess is 1% inspiration, 98% perspiration, and 2% attention to detail.",
+      "quote": "Success is 1% inspiration, 98% perspiration, and 2% attention to detail.",
       "actor": "Phil Dunphy"
     },
     {
-      "quote": "if it were easy, everyone would be hot.",
+      "quote": "If it were easy, everyone would be hot.",
       "actor": "Haley Dunphy"
     },
     {
@@ -150,6 +150,7 @@ Returns the actor whose name matches the value of `{name}` e.g. `GET /api/actors
 
 #### `GET /api/actors/gender/{gender}`
 Returns the actors whose gender matches the value of `{gender}` e.g. `GET /api/actors/gender/male`.
+> [https://mfaas.azurewebsites.net/api/actors/gender/male](https://mfaas.azurewebsites.net/api/actors/gender/male)
 ```json
 [
   {
@@ -169,6 +170,7 @@ Returns the actors whose gender matches the value of `{gender}` e.g. `GET /api/a
 
 #### `GET /api/actors/query/{query}`
 Returns the actors whose name contains the value of `{query}` e.g. `GET /api/actors/query/dunphy`.
+> [https://mfaas.azurewebsites.net/api/actors/query/tongue](https://mfaas.azurewebsites.net/api/actors/gender/tongue)
 ```json
 [
   {
