@@ -29,7 +29,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _HttpClient.BaseAddress = new Uri("https://mfaas.azurewebsites.net");
+        _HttpClient.BaseAddress = new Uri("https://mfaas.herokuapp.com");
         _Quotation = await _HttpClient.GetFromJsonAsync<Quotation>("/api/quotes/random");
     }
 }
