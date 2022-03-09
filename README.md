@@ -5,7 +5,7 @@ This is an api with which you can get quotes from modern family. You can filter 
 
 ![](modern-family-header.gif)
 
-![](https://img.shields.io/github/languages/code-size/Stitti/MFaaS?style=flat-square) ![](https://img.shields.io/github/issues/Stitti/MFaaS?style=flat-square) ![](https://img.shields.io/github/last-commit/Stitti/MFaaS?style=flat-square)
+![](https://img.shields.io/github/languages/code-size/Stitti/MFaaS?style=flat-square) ![](https://img.shields.io/github/issues/Stitti/MFaaS?style=flat-square) ![](https://img.shields.io/github/last-commit/Stitti/MFaaS?style=flat-square) ![](https://img.shields.io/github/deployments/Stitti/MFaaS/mfaas?label=API&style=flat-square)
 
 ## Websites
 Overview: [https://stitti.github.io/MFaaS/](https://stitti.github.io/MFaaS/)
