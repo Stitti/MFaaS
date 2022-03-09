@@ -1,5 +1,5 @@
-# MFaaS
-**Modern Family as a Service.**
+# MFaaS - Modern Family as a Service
+![](Client/Resources/modern-family-as-a-service.jpg)
 
 This is an api with which you can get quotes from modern family. You can filter by the actor or the content of the quote. Or you can just get random quotes.
 
@@ -8,7 +8,7 @@ This is an api with which you can get quotes from modern family. You can filter 
 ## Websites
 Overview: [https://stitti.github.io/MFaaS/](https://stitti.github.io/MFaaS/)
 
-Api: [https://mfaas.azurewebsites.net](https://mfaas.azurewebsites.net)
+Api: [https://mfaas.herokuapp.com](https://mfaas.herokuapp.com)
 
 ## API
 ### Quotes
@@ -195,4 +195,8 @@ Returns the actors whose name contains the value of `{query}` e.g. `GET /api/act
 ```
 
 ## Contributing
-If you want to contribute, add a quote in `quotes.json` or add a new actor in `actors.json`
+If you want to contribute, add a quote in `quotes.json` or add a new actor in `actors.json`.
+Also feel free to improve the website.
+
+## License
+See license [here](LICENSE.md)
