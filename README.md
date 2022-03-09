@@ -21,4 +21,4 @@ Also feel free to improve the website.
 See code of conduct [here](docs/CODE_OF_CONDUCT.md)
 
 ## License
-See license [here](docs/LICENSE.md)
+See license [here](LICENSE.md)
