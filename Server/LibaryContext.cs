@@ -6,8 +6,8 @@ namespace MFaaS.Server
 {
     public class LibaryContext
     {
-        private readonly string _QutationsPath = AppDomain.CurrentDomain.BaseDirectory + "Ressources/quotes.json";
-        private readonly string _ActorsPath = AppDomain.CurrentDomain.BaseDirectory + "Ressources/actors.json";
+        private readonly string _QutationsPath = AppDomain.CurrentDomain.BaseDirectory + "Resources/quotes.json";
+        private readonly string _ActorsPath = AppDomain.CurrentDomain.BaseDirectory + "Resources/actors.json";
         private static LibaryContext _Instance = null;
 
         public List<Quotation> Quotations { get; private set; }

@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime jsRuntime
 @using MFaaS.Shared.Models;
 
 <div class="page">
@@ -9,7 +10,7 @@
         <article class="content px-4">
             <div>
                 <div style="text-align: center">
-                    <img width="624" height="320" src="https://github.com/Stitti/MFaaS/blob/master/Client/Ressources/modern-family-as-a-service.jpg?raw=true" alt="Image"/>
+                    <img width="624" height="320" src="https://github.com/Stitti/MFaaS/blob/master/Client/Resources/modern-family-as-a-service.jpg?raw=true" alt="Image"/>
                 </div>
                 <div>
                   <blockquote style="text-align:center;">
@@ -18,12 +19,7 @@
                   </blockquote>
                 </div>
             </div>
-            <div style="background:url() no-repeat; width:40px; height:40px;">
-                <span class="icon"></span>
-                <a href="#">Crimson</a>
-                <span></span>
-                </div>
-
+            <input width="32" height="32" type="image" onclick="; return false;" src="https://github.com/Stitti/MFaaS/blob/master/Client/Resources/github.png?raw=true" />
         </article>
     </main>
 </div>
@@ -31,12 +27,16 @@
 @code {
     private HttpClient _HttpClient = new HttpClient();
     private Quotation _Quotation;
-    private string _ImagePath;
 
     protected override async Task OnInitializedAsync()
     {
-        _HttpClient.BaseAddress = new Uri("https://localhost:7098");
+        _HttpClient.BaseAddress = new Uri("https://mfaas.azurewebsites.net");
         _Quotation = await _HttpClient.GetFromJsonAsync<Quotation>("/api/quotes/random");
+    }
+
+    private void OpenGitHub()
+    {
+        jsRuntime.InvokeAsync<object>("open", "https://github.com/Stitti/MFaaS", "_blank");
     }
 }
 
