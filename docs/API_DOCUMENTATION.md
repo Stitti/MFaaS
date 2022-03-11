@@ -2,7 +2,7 @@
 ## Quotes
 ### `GET /api/quotes`
 Returns all quotes.
-> [https://mfaas.azurewebsites.net/api/quotes](https://mfaas.azurewebsites.net/api/quotes)
+> [https://mfaas.herokuapp.com/api/quotes](https://mfaas.herokuapp.com/api/quotes)
 ```json
 [
   {
@@ -18,7 +18,7 @@ Returns all quotes.
 
 ### `GET /api/quotes/random`
 Returns a random quote.
-> [https://mfaas.azurewebsites.net/api/quotes/random](https://mfaas.azurewebsites.net/api/quotes/random)
+> [https://mfaas.herokuapp.com/api/quotes/random](https://mfaas.herokuapp.com/api/quotes/random)
 ```json
 {
   "quote": "With great hotness comes great responsibility",
@@ -28,7 +28,7 @@ Returns a random quote.
 
 ### `GET /api/quotes/random/{count}`
 Returns an array with `{count}` quotes e.g. `GET /api/quotes/random/3`.
-> [https://mfaas.azurewebsites.net/api/quotes/random/3](https://mfaas.azurewebsites.net/api/quotes/random/3)
+> [https://mfaas.herokuapp.com/api/quotes/random/3](https://mfaas.herokuapp.com/api/quotes/random/3)
 ```json
 [
   {
@@ -48,7 +48,7 @@ Returns an array with `{count}` quotes e.g. `GET /api/quotes/random/3`.
 
 ### `GET /api/quotes/actor/{actor}`
 Returns a list of all quotes of actors whose name matches the value of `{actor}` e.g. `GET /api/quotes/actor/mitchell%20pritchett`.
-> [https://mfaas.azurewebsites.net/api/quotes/actor/mitchell%20pritchett](https://mfaas.azurewebsites.net/api/quotes/actor/mitchell%20pritchett)
+> [https://mfaas.herokuapp.com/api/quotes/actor/mitchell%20pritchett](https://mfaas.herokuapp.com/api/quotes/actor/mitchell%20pritchett)
 ```json
 [
   {
@@ -72,7 +72,7 @@ Returns a list of all quotes of actors whose name matches the value of `{actor}`
 
 ### `GET /api/quotes/actor/query/{query}`
 Returns a list of all quotes of actors whose name contains the value of `{query}` e.g. `GET /api/quotes/actor/query/dunphy`.
-> [https://mfaas.azurewebsites.net/api/quotes/actor/query/dunphy](https://mfaas.azurewebsites.net/api/quotes/actor/query/dunphy)
+> [https://mfaas.herokuapp.com/api/quotes/actor/query/dunphy](https://mfaas.herokuapp.com/api/quotes/actor/query/dunphy)
 ```json
 [
   {
@@ -96,7 +96,7 @@ Returns a list of all quotes of actors whose name contains the value of `{query}
 
 ### `GET /api/quotes/query/{query}`
 Returns a list of all quotes that contain the value of `{query}` e.g. `GET /api/quotes/query/tongue`.
-> [https://mfaas.azurewebsites.net/api/quotes/query/tongue](https://mfaas.azurewebsites.net/api/quotes/query/tongue)
+> https://mfaas.herokuapp.com/api/quotes/query/tongue](https://mfaas.herokuapp.com/api/quotes/query/tongue)
 ```json
 [
   {
@@ -109,7 +109,7 @@ Returns a list of all quotes that contain the value of `{query}` e.g. `GET /api/
 ## Actors
 ### `GET /api/actors`
 Returns all actors
-> [https://mfaas.azurewebsites.net/api/actors](https://mfaas.azurewebsites.net/api/actors)
+> [https://mfaas.herokuapp.com/api/actors](https://mfaas.herokuapp.com/api/actors)
 ```json
 [
   {
@@ -128,7 +128,7 @@ Returns all actors
 ```
 ### `GET /api/actors/name/{name}`
 Returns the actor whose name matches the value of `{name}` e.g. `GET /api/actors/name/phil%20dunphy`.
-> [https://mfaas.azurewebsites.net/api/actors/name/phil%20dunphy](https://mfaas.azurewebsites.net/api/actors/name/phil%20dunphy)
+> [https://mfaas.herokuapp.com/api/actors/name/phil%20dunphy](https://mfaas.herokuapp.com/api/actors/name/phil%20dunphy)
 ```json
 {
   "name": "Phil Dunphy",
@@ -138,7 +138,7 @@ Returns the actor whose name matches the value of `{name}` e.g. `GET /api/actors
 
 ### `GET /api/actors/gender/{gender}`
 Returns the actors whose gender matches the value of `{gender}` e.g. `GET /api/actors/gender/male`.
-> [https://mfaas.azurewebsites.net/api/actors/gender/male](https://mfaas.azurewebsites.net/api/actors/gender/male)
+> [https://mfaas.herokuapp.com/api/actors/gender/male](https://mfaas.herokuapp.com/api/actors/gender/male)
 ```json
 [
   {
@@ -158,7 +158,7 @@ Returns the actors whose gender matches the value of `{gender}` e.g. `GET /api/a
 
 ### `GET /api/actors/query/{query}`
 Returns the actors whose name contains the value of `{query}` e.g. `GET /api/actors/query/dunphy`.
-> [https://mfaas.azurewebsites.net/api/actors/query/tongue](https://mfaas.azurewebsites.net/api/actors/gender/tongue)
+> [https://mfaas.herokuapp.com/api/actors/query/tongue](https://mfaas.herokuapp.com/api/actors/gender/tongue)
 ```json
 [
   {
