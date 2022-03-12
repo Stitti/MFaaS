@@ -13,7 +13,7 @@ Overview: [https://stitti.github.io/MFaaS/](https://stitti.github.io/MFaaS/)
 Api: [https://mfaas.herokuapp.com](https://mfaas.herokuapp.com)
 
 ## Documentation
-See documentation [here](docs/DOCUMENTATION.md)
+See documentation [here](.github/DOCUMENTATION.md)
 
 ## Contributing
 If you want to contribute, add a quote in `quotes.json` or add a new actor in `actors.json`.
@@ -21,7 +21,7 @@ If you want to contribute, add a quote in `quotes.json` or add a new actor in `a
 Also feel free to improve the website.
 
 ## Code of Conduct
-See code of conduct [here](docs/CODE_OF_CONDUCT.md)
+See code of conduct [here](.github/CODE_OF_CONDUCT.md)
 
 ## License
 See license [here](LICENSE.md)
