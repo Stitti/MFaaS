@@ -2,10 +2,8 @@ theme: jekyll-theme-cayman
 relative_links:
   enabled: true
   collections: true
+language: english
 include:
   - README.md
   - LICENSE.md
-  - .github/CODE_OF_CONDUCT.md
-  - .github/DOCUMENTATION.md
-  - .github/API_DOCUMENTATION.md
-  - .github/GETTING_STARTED.md
+  - .github*
