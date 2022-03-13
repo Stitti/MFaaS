@@ -7,3 +7,8 @@ include:
   - README.md
   - LICENSE.md
   - .github*
+  - CODE_OF_CONDUCT.md
+  - DOCUMENTATION.md
+  - API_DOCUMENTATION.md
+  - GETTING_STARTED.md
+
